@@ -1,0 +1,13 @@
+- hosts: rabbitmq
+  gather_facts: true
+  become: true
+  vars:
+    rabbitmq_use_internal_ip: true
+    rabbitmq_erlang_cookie_string: "DDXJCBLEIKPOZPMXUCKT"
+    rabbitmq_clustering_type: ec2
+    rabbitmq_discovery_ec2_tags: true
+    rabbitmq_discovery_ec2_region: us-east-1
+    rabbitmq_discovery_ec2_instance_tags:
+      - rbt_node: "true"
+  roles:
+    - rabbitmq
