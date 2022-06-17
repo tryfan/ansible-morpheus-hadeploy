@@ -1,5 +1,18 @@
-- hosts: morpheus
-  gather_facts: true
-  become: true
-  roles:
-    - morpheus
+---
+  - hosts: elasticsearch
+    gather_facts: true
+    become: true
+    roles:
+      - elasticsearch
+  
+  - hosts: rabbitmq
+    gather_facts: true
+    become: true
+    roles:
+      - rabbitmq
+  
+  - hosts: morpheus
+    gather_facts: true
+    become: true
+    roles:
+      - morpheus

@@ -1,2 +1,9 @@
 - src: https://github.com/gomorpheus/ansible-role-morpheus
   name: morpheus
+
+- src: https://github.com/gomorpheus/ansible-role-rabbitmq-cluster
+  name: rabbitmq
+
+- src: https://github.com/elastic/ansible-elasticsearch
+  name: elasticsearch
+  version: v7.16.3
