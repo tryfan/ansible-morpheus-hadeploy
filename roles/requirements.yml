@@ -3,6 +3,7 @@
 
 - src: https://github.com/gomorpheus/ansible-role-rabbitmq-cluster
   name: rabbitmq
+  version: ubuntu20
 
 - src: https://github.com/elastic/ansible-elasticsearch
   name: elasticsearch
